@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- CoreUI Icons CDN for LeetCode logo -->
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Indushree Byrareddy" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Indushree Byrareddy">Indushree Byrareddy</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:indushreew01@gmail.com" class="contact-link">indushreew01@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17169395642" class="contact-link">+1 (716) 939-5642</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Buffalo, NewYork, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/b-indushree/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/indushre2024" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://leetcode.com/u/panda111/" target="_blank" class="social-link" title="LeetCode">
+              <i class="cib-leetcode"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link data-nav-target="about" >About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-nav-target="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-nav-target="projects">Projects</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-nav-target="contact">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Indushree — a Software Engineer with a passion for backend development,
+             intelligent data systems, and building products that solve real-world problems.
+            I recently completed my Master’s in Computer Science at the University at Buffalo (Aug 2023 – Dec 2024),
+            and I’m currently a Software Engineer at HeronAI.
+          </p>
+
+          <p>
+            My work revolves around building SaaS dashboards powered by
+             HubSpot and QuickBooks data, integrating third‑party APIs,
+              and delivering insights that help businesses grow smarter.
+            I love solving problems through clean architecture, thoughtful APIs,
+            and robust automation. Whether it’s through data pipelines or full‑stack platforms,
+            I focus on building systems that are useful, efficient, and scalable.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="server-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Building scalable, reliable, and efficient backend systems with Django, Node.js, and APIs.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="stats-chart-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Systems & Dashboards</h4>
+                <p class="service-item-text">
+                  Creating intelligent dashboards powered by HubSpot & QuickBooks data to deliver business insights.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="git-network-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Integration</h4>
+                <p class="service-item-text">
+                  Integrating third-party APIs and automating workflows for seamless, connected platforms.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="sync-outline" size="large"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automation</h4>
+                <p class="service-item-text">
+                  Designing pipelines and automation systems that reduce manual effort and improve efficiency.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University at Buffalo – SUNY</h4>
+              <span>Aug 2023 — Dec 2024</span>
+              <p class="timeline-text">
+                <i>Master of Science in Computer Science.</i><br> 
+                Focus on Machine Learning, Deep Learning, Data-Intensive Computing, and Computer Security.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bangalore Institute of Technology</h4>
+              <span>Aug 2017 — July 2021</span>
+              <p class="timeline-text">
+                <i>Bachelor of Engineering in Computer Science.</i>  <br>
+                Built a strong foundation in algorithms, systems, and software engineering while completing multiple research and development projects.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer — HeronAI</h4>
+              <span>Mar 2025 — Present</span>
+                <ul class="timeline-text timeline-text-list">
+                  <li>Built modular dashboards and widget-based visualizations using Django, HTMX, and Apache ECharts, supporting
+ dynamic filters and driving adoption across 5+ enterprise clients.</li>
+                  <li>Engineered scalable backend services and data pipelines with Pandas and custom enrichments to normalize and
+ aggregate CRM and finance data from Google Sheets, HubSpot, and QuickBooks, reducing report generation time
+ by 40%.</li>
+                  <li>Led end-to-end development, improving frontend responsiveness via live HTMX updates and accelerating
+ dashboard load times by up to 60%.</li>
+                </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graduate Teaching Assistant — University at Buffalo</h4>
+              <span>Aug 2024 — Dec 2024</span>
+              <ul class="timeline-text timeline-text-list">
+                <li>Assisted in AI/ML coursework and guided students on projects involving machine learning and deep learning.  
+                Supported assignments, labs, and evaluations for graduate-level classes.
+              </li>
+            </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Programmer Analyst — Cognizant</h4>
+              <span>Nov 2021 — Aug 2023</span>
+              <ul class="timeline-text timeline-text-list">
+                <li> Developed custom ASP.NET C# plugins and JavaScript validations for Microsoft Dynamics 365 (PepsiCo One
+ Touch) to enhance ticket-management features.</li>
+                <li>Automated duplicate-ticket detection, mailbox parsing, and SLA alerts with Power Automate, saving ˜10 hours per
+ week of manual triage.</li>
+                <li>Configured Dynamics 365 workflows for ticket routing, escalation, and approval, ensuring consistent case handling.</li>
+                  <li>Tested and debugged CRM components across development and production environments to enable smooth
+ deployments.</li>
+              </ul>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Tech Stack</h3>
+
+          <ul class="skills-icon-list content-card">
+
+            <li class="skills-item">
+              <ion-icon name="logo-python"></ion-icon>
+              <span>Python / Django</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="logo-javascript"></ion-icon>
+              <span>JavaScript / Node.js / React</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <span>Java / Backend Systems</span>
+            </li>
+
+            <li class="skills-item">
+              <i class="cib-dot-net" style="font-size:22px;vertical-align:middle;"></i>
+              <span> C# / .NET / ASP.NET</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="server-outline"></ion-icon>
+              <span>PostgreSQL / MS SQL / MongoDB</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="cloud-outline"></ion-icon>
+              <span>AWS / Docker / CI-CD</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="git-branch-outline"></ion-icon>
+              <span>Git / Version Control</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="trending-up-outline"></ion-icon>
+              <span>Data & Analytics (Pandas, NumPy, ECharts)</span>
+            </li>
+
+            <li class="skills-item">
+              <ion-icon name="layers-outline"></ion-icon>
+              <span>Machine Learning (TensorFlow, PyTorch, OpenCV)</span>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <!-- <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Backend</button></li>
+            <li class="filter-item"><button data-filter-btn>Machine Learning</button></li>
+            <li class="filter-item"><button data-filter-btn>Full Stack</button></li> -->
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Backend</button></li>
+              <li class="select-item"><button data-select-item>Machine Learning</button></li>
+              <li class="select-item"><button data-select-item>Full Stack</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <!-- HeronAI -->
+            <li class="project-item content-card " data-nav-link data-nav-target="project-heronAI">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/portfolio 1.png" alt="HeronAI Dashboard Widgets" loading="lazy">
+                </figure>
+                <h3 class="project-title">HeronAI Dashboard Widgets</h3>
+                <p class="project-category">Backend / Dashboards</p>
+              </a>
+            </li>
+            <!-- Netlist -->
+            <li class="project-item content-card" data-nav-link data-nav-target="project-netlist">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-netlist.png" alt="Netlist from Circuits" loading="lazy">
+                </figure>
+                <h3 class="project-title">Netlist Generation from Circuits</h3>
+                <p class="project-category">Computer Vision / Research</p>
+              </a>
+            </li>
+
+            <!-- Caption Generator -->
+            <li class="project-item content-card" data-nav-link data-nav-target="project-caption" >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-caption.png" alt="Image Caption Generator" loading="lazy">
+                </figure>
+                <h3 class="project-title">Image Caption Generator</h3>
+                <p class="project-category">Deep Learning</p>
+              </a>
+            </li>
+
+            <!-- YelpCamp -->
+            <li class="project-item content-card" data-nav-link data-nav-target="project-yelpcamp" >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-yelpcamp.png" alt="YelpCamp" loading="lazy">
+                </figure>
+                <h3 class="project-title">YelpCamp</h3>
+                <p class="project-category">Full Stack Development</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+<!-- Projects -->
+
+      <!-- Project: HeronAI -->
+      <article class="project-detail" data-page="project-heronAI">
+
+        <header>
+          <h2 class="h2 article-title">HeronAI — SaaS Analytics Platform</h2>
+        </header>
+        <button class="btn-back" data-back-btn>← Back to Projects</button>
+
+        <!-- Overview -->
+        <section class="about-text content-card" style="padding:16px">
+          <p><strong>HeronAI</strong> is a SaaS analytics platform that makes business data instantly useful. Instead of days of manual setup to connect tools like QuickBooks or HubSpot, a client connects their app and, within minutes, gets dashboards that unify finance, CRM, and other data into a clean, interactive view. The platform supports real-time sync, flexible filtering, modular dashboards, and an AI assistant (<em>Aimee</em>) that answers questions about the data in natural language.</p>
+          <p>My work centered on making this possible under the hood: I built Django backend frameworks, designed Pandas pipelines to ingest and transform client data through the Unified.to API, and shaped it into dashboard-ready models. On the frontend, I implemented widget-based dashboards with HTMX and Apache ECharts for dynamic interaction and customization. I also tuned performance with incremental sync strategies and optimized queries so dashboards stay fast even with large data volumes.</p>
+          <p>The screenshots below show the flow: raw data from multiple sources → normalized backend models → interactive dashboards clients can explore in real time. The rewarding part was bringing backend engineering, data processing, and visualization together to turn scattered data into actionable insight.</p>
+        </section>
+
+        <!-- Quick Facts -->
+        <section class="service" style="margin-top:16px">
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="server-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Role</h4>
+                <p class="service-item-text">Consultant Software Engineer — backend, data pipelines, dashboards</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="stats-chart-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Stack</h4>
+                <p class="service-item-text">Django, HTMX, Pandas, Apache ECharts, Unified.to, OAuth2</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="git-network-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Integrations</h4>
+                <p class="service-item-text">HubSpot CRM, QuickBooks Accounting (via Unified.to)</p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- Highlights -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px;">
+          <h3 class="h3">Highlights</h3>
+          <ul style="margin-top:8px; line-height:1.7">
+            <li>Built a <strong>widget framework</strong> (value cards + charts) for fast, modular dashboards.</li>
+            <li>Designed <strong>Pandas pipelines</strong> to normalize multi-source data into consistent models.</li>
+            <li>Implemented <strong>incremental sync</strong> and retry logic for reliability and speed.</li>
+            <li>Hardened <strong>OAuth2</strong> flows and permissions; improved token/scope handling.</li>
+            <li>Delivered <strong>filter-aware UX</strong> with HTMX for responsive, no-full-reload interactions.</li>
+          </ul>
+        </section>
+
+        <!-- Gallery (replace src with your screenshots) -->
+        <section class="projects" style="margin-top:16px">
+              
+              <h3 class="project-title">UI snapshot of a working dashboard</h3>
+              <figure class="project-img">
+                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                <img src="./assets/images/project-heronai-overview.png" alt="Unified dashboards overview" loading="lazy">
+              </figure>
+              <section class="about-text content-card" style="padding:16px">
+                <p>The screenshot you’ll see here capture different parts of this story. 
+                They show how raw data from multiple sources flows into the system, 
+                how it’s processed and normalized in the backend, 
+                and finally how it comes to life in dashboards that clients can explore in real time.
+                For me, the rewarding part was watching these pieces
+                come together — backend engineering, data processing,
+                and frontend visualization — to turn scattered data into insights
+                that clients could actually use.</p>
+              </section>
+              
+
+        </section>
+
+      </article>
+
+      <!-- Project: Netlist Generation -->
+      <article class="project-detail" data-page="project-netlist">
+
+        <header>
+          <h2 class="h2 article-title">Netlist Generation from Hand-Drawn Circuits</h2>
+        </header>
+
+        <button class="btn-back" data-back-btn>← Back to Projects</button>
+
+        <!-- Storytelling Overview -->
+        <section class="about-text content-card" style="padding:16px; margin-top:12px">
+          <p>
+            It started with a simple frustration: drawing circuits on paper is easy, but
+            turning those sketches into something a simulator like <em>LTspice</em> can actually run
+            usually takes hours of re-drawing and manual wiring. I wanted to bridge that gap —
+            could a computer look at a messy sketch and generate the digital netlist automatically?
+          </p>
+          <p>
+            That question led me to design a computer-vision pipeline that could
+            <strong>recognize components, trace wires, and emit a ready-to-use netlist</strong>.
+            I combined <strong>OpenCV preprocessing</strong> (binarization, skeletonization),
+            <strong>HOG + SVM classification</strong> for components, and a bit of graph theory
+            to connect nodes correctly.
+          </p>
+          <p>
+            The result? A system that takes a scanned hand-drawn circuit and outputs a simulator-ready
+            netlist with around <strong>95% accuracy</strong> on benchmarks. No more re-drawing —
+            just sketch → scan → simulate.
+          </p>
+          <p>
+            What made this rewarding was how many skills came together: image processing cleaned
+            noisy sketches, machine learning gave the system “eyes” to classify components, and
+            netlist logic stitched it all into a real, testable circuit.
+          </p>
+        </section>
+
+        <!-- Screenshot (replace with your figure) -->
+        <figure class="project-img" style="margin-top:20px">
+          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+          <img src="./assets/images/netlist-screenshot.png"
+              alt="Netlist Generation pipeline and output example"
+              loading="lazy">
+        </figure>
+
+        <!-- Highlights -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Highlights</h3>
+          <ul style="margin-top:8px; line-height:1.7">
+            <li>Preprocessing pipeline: denoising, adaptive thresholding, skeletonization.</li>
+            <li>HOG + SVM classifier to identify resistors, diodes, op-amps, and inductors.</li>
+            <li>Rule-based detection for capacitors, grounds, and voltage sources.</li>
+            <li>Graph-based node and wire tracing to ensure valid connectivity.</li>
+            <li>Outputs <strong>LTspice-compatible netlists</strong> from scanned circuit images.</li>
+          </ul>
+        </section>
+
+        <!-- Tech Chips -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Tech & Responsibilities</h3>
+          <ul class="project-meta" style="margin-top:10px">
+            <li>OpenCV</li><li>Python</li><li>HOG</li><li>SVM (RBF)</li>
+            <li>Image Processing</li><li>Graph Theory</li><li>LTspice</li>
+          </ul>
+        </section>
+
+        <!-- IEEE Paper Link -->
+        <section class="about-text content-card" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Publication</h3>
+          <p>
+            This project was published at IEEE and presented at AISP 2022.<br>
+            <a href="https://ieeexplore.ieee.org/document/9760577" 
+              target="_blank" rel="noopener" 
+              style="text-decoration:underline; color:var(--orange-yellow-crayola);">
+              🔗 View IEEE Paper
+            </a>
+          </p>
+        </section>
+
+      </article>
+
+      <!-- Project: Image Caption Generator -->
+      <article class="project-detail" data-page="project-caption">
+
+        <header>
+          <h2 class="h2 article-title">Image Caption Generator</h2>
+        </header>
+
+        <button class="btn-back" data-back-btn>← Back to Projects</button>
+
+        <!-- Storytelling Overview -->
+        <section class="about-text content-card" style="padding:16px; margin-top:12px">
+          <p>
+            We’ve all seen how a single picture can tell a story — but what if a computer could do that too? 
+            That’s what motivated me to build an <strong>Image Caption Generator</strong>: a system that looks 
+            at an image and describes it in natural language. Beyond the technical challenge, this has 
+            powerful real-world applications: <strong>helping visually impaired users</strong> understand 
+            images through spoken captions, <strong>auto-tagging and organizing photos</strong> in large 
+            collections, and even <strong>enhancing human–AI interaction</strong> where systems need to 
+            “see” and “talk” about what’s in front of them.
+          </p>
+          <p>
+            My approach combined the strengths of <strong>Convolutional Neural Networks (CNNs)</strong> 
+            for extracting visual features with <strong>Recurrent Neural Networks (RNNs)</strong> for 
+            generating text. Specifically, I used <strong>VGG16</strong> as the encoder to learn rich image 
+            representations, and an <strong>LSTM decoder</strong> to turn those features into sentences. 
+          </p>
+          <p>
+            Trained on the <strong>Flickr8k dataset</strong>, the model learned to describe a wide variety 
+            of everyday scenes. By the end, it achieved around <strong>98% vocabulary coverage</strong>, 
+            producing captions like “a dog running through the grass” or “two people riding bicycles on a street.” 
+            The most exciting part for me was seeing the system generalize: even when it hadn’t seen a particular 
+            image before, it could still narrate the scene with surprising fluency.
+          </p>
+        </section>
+
+        <!-- Screenshot (replace with your own) -->
+        <figure class="project-img" style="margin-top:20px">
+          <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+          <img src="./assets/images/caption-screenshot.png" 
+              alt="Image captioning example: dog running in park" 
+              loading="lazy">
+        </figure>
+
+        <!-- Highlights -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Highlights</h3>
+          <ul style="margin-top:8px; line-height:1.7">
+            <li>Built an <strong>encoder–decoder pipeline</strong> with CNN + LSTM.</li>
+            <li>Used <strong>VGG16</strong> for visual feature extraction.</li>
+            <li>Implemented an <strong>LSTM language model</strong> for sequential caption generation.</li>
+            <li>Trained on <strong>Flickr8k</strong> dataset, covering 98% of the vocabulary.</li>
+            <li>Generated coherent captions for unseen images.</li>
+          </ul>
+        </section>
+
+        <!-- Tech Chips -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Tech & Responsibilities</h3>
+          <ul class="project-meta" style="margin-top:10px">
+            <li>Python</li><li>TensorFlow / Keras</li><li>VGG16</li>
+            <li>LSTM</li><li>Deep Learning</li><li>Flickr8k Dataset</li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- Project: YelpCamp -->
+      <article class="project-detail" data-page="project-yelpcamp">
+
+        <header>
+          <h2 class="h2 article-title">YelpCamp — Campground Web App</h2>
+        </header>
+
+        <button class="btn-back" data-back-btn>← Back to Projects</button>
+
+        <!-- Storytelling Overview -->
+        <section class="about-text content-card" style="padding:16px; margin-top:12px">
+          <p>
+            When I wanted to get serious about web development, I knew I needed a project that would
+            push me to learn the fundamentals — <strong>authentication, authorization, sessions, and cookies</strong>.
+            That’s how <strong>YelpCamp</strong> was born: a full-stack web app for discovering and reviewing campsites.
+          </p>
+          <p>
+            Users can <strong>sign up and log in</strong> to create their own campsite listings, complete with
+            images and descriptions. Other users can leave <strong>reviews</strong>, but only the logged-in
+            creator of a campsite has the power to <strong>edit or delete</strong> it. This gave me hands-on
+            experience with <strong>role-based access control</strong> and protecting routes on both the client
+            and server side.
+          </p>
+          <p>
+            What started as a learning exercise turned into a project that mirrors many real-world web apps:
+            CRUD operations, secure user sessions, user-generated content, and community interaction.
+          </p>
+        </section>
+
+        <!-- Highlights -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Highlights</h3>
+          <ul style="margin-top:8px; line-height:1.7">
+            <li>Full CRUD functionality for campsites (create, read, update, delete).</li>
+            <li>Authentication & sessions with secure cookies.</li>
+            <li>Authorization rules: only campsite owner can edit/delete.</li>
+            <li>User reviews with ratings tied to campsite entries.</li>
+            <li>Responsive design and photo uploads for campsite listings.</li>
+          </ul>
+        </section>
+
+        <!-- Tech Chips -->
+        <section class="about-text content-card highlights" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Tech & Responsibilities</h3>
+          <ul class="project-meta" style="margin-top:10px">
+            <li>Node.js</li><li>Express</li><li>MongoDB</li><li>Passport.js</li>
+            <li>EJS</li><li>CRUD</li><li>Auth & Sessions</li><li>Web Security</li>
+          </ul>
+        </section>
+
+        <!-- Live Link -->
+        <section class="about-text content-card" style="padding:16px; margin-top:16px">
+          <h3 class="h3">Live Demo</h3>
+          <p style="margin-top:8px">
+            🔗 <a href="https://campsite-xpjr.onrender.com/" 
+                  target="_blank" rel="noopener" 
+                  style="text-decoration:underline; color:var(--orange-yellow-crayola);">
+              Visit YelpCamp
+            </a>
+          </p>
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93532.37743371383!2d-78.9470141404908!3d42.89633514179368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3126152dfe5a1%3A0x982304a5181f8171!2sBuffalo%2C%20NY!5e0!3m2!1sen!2sus!4v1756915597075!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+   <!-- - emailJS -->
+
+</body>
+
+</html>
